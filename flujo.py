@@ -36,7 +36,6 @@ def simular(tlim: float, pcl: int) -> None:
             tc += delta
 
         if reloj >= tlim:
-            tna = sum(na)
             break
 
         if tc >= tas:
@@ -68,6 +67,7 @@ def simular(tlim: float, pcl: int) -> None:
     for i in range(3):
         print(f'\nTiempo de ocio de caja {i + 1}: {to[i]}')
         print(f'Clientes atendidas en caja {i + 1}: {na[i]}')
+    tna = sum(na)
     print(f'\nTotal de clientes atendidos: {tna}')
 
-    return to, na, tna
+    return to, na
