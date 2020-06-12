@@ -69,3 +69,5 @@ def simular(tlim: float, pcl: int) -> None:
         print(f'\nTiempo de ocio de caja {i + 1}: {to[i]}')
         print(f'Clientes atendidas en caja {i + 1}: {na[i]}')
     print(f'\nTotal de clientes atendidos: {tna}')
+
+    return to, na, tna
